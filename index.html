@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nirjhor Datta — Research & Teaching</title>
+  <meta name="description" content="Nirjhor Datta — Lecturer at BRAC University & MSc student at BUET. Research in bioinformatics, phylogenetics, CRISPR, and medical imaging." />
+  <meta property="og:title" content="Nirjhor Datta — Research & Teaching" />
+  <meta property="og:description" content="Lecturer at BRACU, MSc @ BUET. Research: genomic sequence modeling, phylogeny, CRISPR off‑target, medical imaging." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/000000?v=4" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%230f172a'/%3E%3Ctext x='50' y='60' font-size='48' text-anchor='middle' fill='white' font-family='Arial, Helvetica, sans-serif'%3END%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root {
+      --bg: #0b0f1a;
+      --bg-soft: #101727;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --brand: #38bdf8;
+      --brand-2: #a78bfa;
+      --card: #0f172a;
+      --ring: #1e293b;
+    }
+    @media (prefers-color-scheme: light) {
+      :root { --bg:#f8fafc; --bg-soft:#eef2ff; --text:#0f172a; --muted:#475569; --card:#ffffff; --ring:#cbd5e1; }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; background: var(--bg); color: var(--text); line-height: 1.6; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: 100%; max-width: 1050px; margin: 0 auto; padding: 1rem 1.25rem; }
+    /* Nav */
+    .nav { position: sticky; top: 0; z-index: 10; backdrop-filter: blur(10px); background: color-mix(in srgb, var(--bg) 80%, transparent); border-bottom: 1px solid var(--ring); }
+    .nav-inner { display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+    .brand { display:flex; align-items:center; gap:.75rem; font-weight:700; letter-spacing:.3px; }
+    .logo { width:34px; height:34px; border-radius:50%; display:grid; place-items:center; background: radial-gradient(120% 120% at 30% 30%, var(--brand) 0%, var(--brand-2) 50%, #111827 100%); box-shadow: inset 0 0 0 2px #0003, 0 6px 24px #0007; color:white; font-size: 0.9rem; }
+    .menu { display:flex; gap:.9rem; flex-wrap:wrap; }
+    .menu a { padding:.5rem .7rem; border-radius:999px; color: var(--text); border:1px solid transparent; }
+    .menu a:hover { border-color: var(--ring); }
+    .ghost { background:transparent; border:1px solid var(--ring); color:var(--text); padding:.5rem .8rem; border-radius:999px; cursor:pointer; }
+    /* Hero */
+    .hero { padding: 3.2rem 0 2.0rem; display:grid; grid-template-columns: 1.2fr .8fr; gap:2rem; align-items:center; }
+    .hero h1 { font-size: clamp(2rem, 3.5vw, 3rem); line-height:1.1; margin:0 0 .75rem; }
+    .lead { color: var(--muted); font-size: clamp(1rem, 1.7vw, 1.1rem); }
+    .pill { display:inline-flex; align-items:center; gap:.5rem; font-size:.9rem; color:var(--muted); border:1px solid var(--ring); padding:.35rem .6rem; border-radius:999px; }
+    .hero-card { background: linear-gradient(180deg, color-mix(in srgb, var(--card) 92%, transparent), color-mix(in srgb, var(--bg) 85%, transparent)); border:1px solid var(--ring); border-radius:18px; padding:1.2rem; box-shadow: 0 10px 30px #0006; }
+    .avatar { width: 120px; height: 120px; border-radius: 18px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); display:block; }
+    .quick { display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:.7rem; margin-top: .9rem; }
+    .quick a { display:flex; gap:.6rem; align-items:center; border:1px solid var(--ring); padding:.6rem .7rem; border-radius:12px; color: var(--text); }
+    .quick a span { color: var(--muted); font-size:.95rem; }
+    /* Sections */
+    section { padding: 2.2rem 0; }
+    section h2 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); margin:0 0 .9rem; }
+    .grid { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:1rem; }
+    .card { background: var(--card); border: 1px solid var(--ring); padding: 1rem; border-radius: 14px; }
+    .card h3 { margin:.2rem 0 .4rem; font-size:1.05rem; }
+    .meta { font-size:.9rem; color: var(--muted); }
+    .tags { display:flex; gap:.4rem; flex-wrap:wrap; margin-top:.5rem; }
+    .tag { font-size:.75rem; padding:.18rem .5rem; border-radius:999px; background: color-mix(in srgb, var(--brand) 12%, transparent); border: 1px solid var(--ring); }
+    /* Publications */
+    .pub { padding: .9rem; border:1px solid var(--ring); border-radius:12px; background: var(--card); }
+    .pub b { display: inline;font-weight: bold; }
+    .pub .authors { color: var(--muted); font-size:.95rem; }
+    .pub .venue { font-size:.9rem; color: var(--muted); }
+    /* Teaching */
+    .table { width:100%; border-collapse: collapse; }
+    .table th, .table td { border-bottom:1px solid var(--ring); padding:.6rem .4rem; text-align:left; font-size:.95rem; }
+    .table th { color: var(--muted); font-weight:600; }
+    /* Footer */
+    footer { border-top:1px solid var(--ring); color: var(--muted); padding:1.5rem 0 3rem; }
+    /* Responsive */
+    @media (max-width: 900px) { .hero { grid-template-columns: 1fr; } .grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } .quick { grid-template-columns: 1fr; } }
+    /* Fancy underline link */
+    .uline { position:relative; }
+    .uline::after { content:""; position:absolute; left:0; bottom:-2px; height:2px; width:100%; background: linear-gradient(90deg, var(--brand), var(--brand-2)); opacity:.5; }
+    /* Skip link */
+    .skip { position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden; }
+    .skip:focus { position: static; width: auto; height: auto; background: var(--brand); color:#001019; padding:.3rem .6rem; border-radius:6px; }
+  </style>
+  <script>
+    // Simple dark/light toggle (persists in localStorage)
+    function toggleTheme(){
+      const k='pref-theme';
+      const curr = localStorage.getItem(k) || 'auto';
+      const next = curr==='dark'?'light':curr==='light'?'auto':'dark';
+      localStorage.setItem(k,next);
+      applyTheme();
+    }
+    function applyTheme(){
+      const pref = localStorage.getItem('pref-theme');
+      document.documentElement.dataset.theme = pref || 'auto';
+      document.querySelector('#theme-state').textContent = (pref||'auto').toUpperCase();
+    }
+    document.addEventListener('DOMContentLoaded', applyTheme);
+  </script>
+  <style>
+    /* Apply theme state */
+    :root[data-theme="dark"] { color-scheme:dark; }
+    :root[data-theme="light"] { color-scheme:light; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nirjhor Datta",
+    "affiliation": [{"@type":"Organization","name":"BRAC University"}, {"@type":"CollegeOrUniversity","name":"BUET"}],
+    "jobTitle": "Lecturer",
+    "url": "https://<your-github-username>.github.io/",
+    "sameAs": [
+      "https://github.com/<your-github-username>",
+      "https://scholar.google.com/citations?user=<your-id>",
+      "https://orcid.org/<your-orcid>"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand"><span class="logo">ND</span> <span>Nirjhor Datta</span></div>
+      <div class="menu" role="navigation" aria-label="primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+        <button class="ghost" onclick="toggleTheme()">Theme: <span id="theme-state">AUTO</span></button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="container hero" id="main">
+    <div>
+      <span class="pill">Lecturer @ BRACU · MSc @ BUET · Dhaka, Bangladesh</span>
+      <h1>Nirjhor Datta</h1>
+      <p class="lead"></p>
+      <div class="quick">
+        <a href="https://github.com/NIRJHOR-DATTA" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.52 1.05 1.52 1.05.89 1.57 2.34 1.12 2.9.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05.8-.23 1.65-.35 2.5-.35.85 0 1.7.12 2.5.35 1.9-1.32 2.74-1.05 2.74-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.8-4.57 5.06.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .27.18.59.69.49A10.03 10.03 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/></svg>
+          <b>GitHub</b> <span>NIRJHOR-DATTA</span>
+        </a>
+        <a href="#cv" onclick="document.getElementById('cv-note').scrollIntoView({behavior:'smooth'}); return false;">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m8 6V3.5L19.5 8H14Z"/></svg>
+          <b>CV</b> <span>Download / View</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img class="avatar" alt="Profile placeholder" src="https://ui-avatars.com/api/?name=Nirjhor+Datta&background=0f172a&color=fff&length=2&size=240"/>
+      <div style="margin-top:.8rem; color:var(--muted)"></div>
+      <ul style="margin:.9rem 0 0 1.1rem; padding:0; color:var(--muted)">
+        <li>Research Interest: Computer Vision, Bioinformatics</li>
+        <!-- <li></li> -->
+        <li>Teaching: AI/ML, Networks</li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About</h2>
+      <p>I'm a Lecturer at BRAC University and an MSc student at BUET. I am supervised by <strong>Dr. Sohel Rahman</strong>. My current work spans computer vision, medical imaging,genomic sequence modeling<, phylogenetic tree estimation.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Entropy-Driven-Genetic-Optimization-for-Deep-Feature-Guided-Low-Light-Image-Enhancement</h3>
+          <div class="meta">Deap · Genetic Algorithm · NSGAII</div>
+          <!-- <p>Gapped convolution + transformer ranking model for robust off‑target prediction with domain‑balanced evaluation.</p> -->
+          <div class="tags"><span class="tag">NSGAII</span><span class="tag">Image Enhancement</span><span class="tag">PSNR, SSIM , NIQUE, BRISQUE</span></div>
+          <p><a href="https://github.com/NIRJHOR-DATTA/Entropy-Driven-Genetic-Optimization-for-Deep-Feature-Guided-Low-Light-Image-Enhancement">Repo</a> · <a href="https://arxiv.org/abs/2505.11246">Preprint</a></p>
+        </article>
+        <article class="card">
+          <h3>QUARTET-POTENTIAL GUIDED PHYLOGENY: FAST,
+UNCERTAINTY-AWARE TOPOLOGY SEARCH WITHOUT
+EXTERNAL LIKELIHOOD</h3>
+          <div class="meta"> RF distance · Tree space</div>
+          <p>Faster Gene Tree Estimation, IQTREE, wQFM</p>
+          <div class="tags"><span class="tag">Phylogenetics</span><span class="tag">MSA</span><span class="tag">RF</span></div>
+          <!-- <p><a href="https://github.com/<your-github-username>/quartet-align">Repo</a></p> -->
+        </article>
+        <!-- <article class="card">
+          <h3>Meta‑IDM</h3>
+          <div class="meta">Meta‑learning · Deblur/Denoise · Low‑Light</div>
+          <p>Few‑shot adaptation of enhancement models to mixed degradations via MAML‑style objectives and task‑conditioned modules.</p>
+          <div class="tags"><span class="tag">Imaging</span><span class="tag">Meta‑Learning</span><span class="tag">MAML</span></div>
+          <p><a href="https://github.com/<your-github-username>/meta-idm">Repo</a></p>
+        </article> -->
+      </div>
+    </section>
+    <section id="publications">
+      <h2>Undergrduate Thesis</h2>
+      <div class="pub">
+        <b>Deep learning-based hybrid multi-task model for adrenocortical carcinoma segmentation and classification</b>
+        <div class="Supervisor">Supervisor: Dr Muhammad Iqbal Hossain, Md Tanzim Reza</div>
+        <div class="venue">A hybrid lightweight model for sefmentation and classification</div>
+        <a href="https://dspace.bracu.ac.bd/xmlui/handle/10361/22838">PDF</a> · <a href="https://dspace.bracu.ac.bd/xmlui/handle/10361/22838">Code</a>
+      </div>
+    </section>
+    <section id="publications">
+      <h2>Msc Thesis</h2>
+      <div class="pub">
+        <b>ILLUME: Interpretable Low-Light Unsupervised Multi-objective Enhancement</b>
+        <div class="Supervisor">Supervisor: Dr Md Sohel Rahman</div>
+        <div class="venue">A zero shot image enhancement work</div>
+        <div class="venue">In writing stage</div>
+        <!-- <a href="#">PDF</a> · <a href="https://dspace.bracu.ac.bd/xmlui/handle/10361/22838">Code</a> -->
+      </div>
+    </section>
+    <section id="publications">
+      <h2>Research Work</h2>
+      <div class="pub">
+        <b>Offset-Aware Uncertainty-guided Fusion U-Net</b>
+        <div class="authors"><b>Nirjhor Datta,</b> Dr Md Golam Rabiul Alam</div>
+        <div class="venue">In experiment stage</div>
+        <!-- <a href="#">PDF</a> · <a href="#">Code</a> -->
+      </div>
+      <div class="pub">
+        <b>Retrieval Augmented Visual Question Answering for Skin Cancer</b>
+        <div class="authors"><b>Nirjhor Datta,</b> Dr Md Golam Rabiul Alam</div>
+        <div class="venue">Under Review in Journal of Big Data</div>
+        <!-- <a href="#">PDF</a> · <a href="#">Code</a> -->
+      </div>
+      <div class="pub">
+        <b>Embedding Is (Almost) All You Need: Retrieval-Augmented Inference for Generalizable Genomic Prediction Tasks</b>
+        <div class="authors"><b>Nirjhor Datta,</b> Swakkhar Shatabda, M Sohel Rahman</div>
+        <!-- <div class="venue">Under Review in Journal of Big Data</div> -->
+        <a href="https://arxiv.org/abs/2508.04757">PDF</a> · <a href="https://github.com/NIRJHOR-DATTA/EMBEDDING-IS-ALMOST-ALL-YOU-NEED">Code</a>
+      </div>
+      <div class="pub">
+        <b>Foundation Model Embeddings Enable Efficient and Generalizable Genomic Prediction</b>
+        <div class="authors"><b>Nirjhor Datta,</b> Swakkhar Shatabda, M Sohel Rahman</div>
+        <div class="venue">In final writing stage</div>
+        <!-- <a href="https://arxiv.org/abs/2508.04757">PDF</a> · <a href="https://github.com/NIRJHOR-DATTA/EMBEDDING-IS-ALMOST-ALL-YOU-NEED">Code</a> -->
+      </div>
+      <div class="pub">
+        <b>Causal Counterfactual Explainability for Multimodal Large Language Models</b>
+        <div class="authors"><b>Nirjhor Datta,</b>  Ahmed Mayeesha Reza Agomoni, Chowdhury Rakin Haider</div>
+        <div class="venue">In final experiment stage</div>
+        <!-- <a href="https://arxiv.org/abs/2508.04757">PDF</a> · <a href="https://github.com/NIRJHOR-DATTA/EMBEDDING-IS-ALMOST-ALL-YOU-NEED">Code</a> -->
+      </div>
+      
+    </section>
+    <section id="co-supervise">
+      <h2>Research Mentor</h2>
+      <div class="pub">
+        <b>BanglaMUX: enhancing regional dialect detection, transcription and translation performance for low-resource Bangla language ﻿</b>
+        <div class="authors">co-supervised with Dr.Farig Sadeque</div>
+        <!-- <div class="venue">In experiment stage</div> -->
+        <!-- <a href="#">PDF</a> · <a href="#">Code</a> -->
+      </div>
+      <div class="pub">
+        <b>KrishiBot: An NLP Approach to Enhance Farming with Low Resource Language</b>
+        <div class="authors">co-supervised with Dr.Farig Sadeque</div>
+        <!-- <div class="venue">Under Review in Journal of Big Data</div> -->
+        <!-- <a href="#">PDF</a> · <a href="#">Code</a> -->
+      </div>
+      <div class="pub">
+        <b>ReCAN: A Residual Channel Attention Network with
+Alternating Skip Connection for Robust Medical Image Classification</b>
+        <div class="authors">co-supervised with Dr.Md Golam Rabiul Alam</div>
+        <!-- <div class="venue">Under Review in Journal of Big Data</div> -->
+        <!-- <a href="https://arxiv.org/abs/2508.04757">PDF</a> · <a href="https://github.com/NIRJHOR-DATTA/EMBEDDING-IS-ALMOST-ALL-YOU-NEED">Code</a> -->
+      </div>
+      
+      
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <table class="table" aria-label="Courses taught">
+        <thead><tr><th>Course</th><th>Term</th><</tr></thead>
+        <tbody>
+          <tr><td>CSE421 - Computer Network</td><td>Summer24, Fall24, Spring25, Summer25,Fall 2025</td></tr>
+          <tr><td>CSE422 - Artificial Intelligence</td><td>Fall 2025</tr>
+          
+        </tbody>
+      </table>
+      
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>For research collaboration, student supervision, or talks, reach out:</p>
+      <ul>
+        <!-- <li>Email: <a href="mailto:nirjhordatta2002@gmail.com">nirjhordatta</a></li> -->
+        <li>GitHub: <a href="https://github.com/NIRJHOR-DATTA">@NIRJHOR-DATTA</a></li>
+        <li>Google Scholar: <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=ccRxevQAAAAJ">Scholar</a></li>
+        <!-- <li>ORCID: <a href="https://orcid.org/<your-orcid>">orcid.org/<your-orcid></a></li> -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© <span id="year"></span> Nirjhor Datta. Built for <a href="https://pages.github.com/">GitHub Pages</a>. </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
